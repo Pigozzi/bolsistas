@@ -1,6 +1,5 @@
 import React from 'react';
 
-// import { FiSearch, FiEdit2, FiDelete } from 'react-icons/fi';
 import Sidebar from '../components/Sidebar';
 import MUIDataTable from 'mui-datatables';
 
@@ -28,7 +27,7 @@ function Bolsistas() {
                                 search: true,
                                 filter: false,
                                 viewColumns: false,
-                                selectableRows: "none",
+                                // selectableRows: "none",
                             }}
                         />
                     </div>

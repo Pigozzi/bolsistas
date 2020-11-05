@@ -15,7 +15,7 @@ function Bolsista() {
                             <div className="row fundo">
                                 <div className="col-12">
                                     <fieldset>
-                                        <legend>CADASTRO DE BOLSISTAS</legend>
+                                        <legend>Cadastro de Bolsistas</legend>
                                     </fieldset>
                                 </div>
                                 <div className="col-12 input-block">
@@ -23,16 +23,22 @@ function Bolsista() {
                                     <input type="text" />
                                 </div>
                                 <div className="col-8 input-block">
-                                    <label htmlFor="name">Nome do Espetáculo</label>
-                                    <input type="text" />
+                                    <label htmlFor="">Nome do Espetáculo</label>
+                                    <select name="espetaculo" id="espetaculo">
+                                        <option selected disabled>Selecione um espetáculo</option>
+                                        <option value="VNJ">Violetas na janela</option>
+                                    </select>
                                 </div>
                                 <div className="col-4 input-block">
-                                    <label htmlFor="name">Data do Espetáculo</label>
-                                    <input type="date" />
+                                    <label htmlFor="">Data do Espetáculo</label>
+                                    <select name="espetaculo" id="espetaculo">
+                                        <option selected disabled>Selecione a data do espetáculo</option>
+                                        <option value="date">16/03/2021</option>
+                                    </select>
                                 </div>
                                 <div className="col-6 input-block">
                                     <label htmlFor="name">Entrada</label>
-                                    <input type="time" />
+                                    <input type="time" min="00:00" max="24:00" />
                                 </div>
                                 <div className="col-6 input-block">
                                     <label htmlFor="name">Saída</label>

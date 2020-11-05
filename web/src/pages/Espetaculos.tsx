@@ -27,7 +27,7 @@ function Espetaculos() {
                                 search: true,
                                 filter: false,
                                 viewColumns: false,
-                                selectableRows: "none",
+                                // selectableRows: "none",
                             }}
                         />
                     </div>

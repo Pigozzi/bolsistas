@@ -56,6 +56,17 @@ form .input-block textarea {
     color: #5C8599; 
 }
 
+form .input-block select {
+    width: 100%;
+    background: #F5F8FA;
+    border: 1px solid #D3E2E5;
+    border-radius: 10px;
+    /* outline: none;    */
+    height: 35px;
+    padding: 0 16px;
+    color: #5C8599; 
+}
+
 .confirm-button {
     /* position: absolute; */
     width: 120px;

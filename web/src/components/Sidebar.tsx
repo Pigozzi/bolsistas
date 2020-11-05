@@ -1,11 +1,10 @@
 import React from 'react'
-import { FiArrowLeft, FiUsers, FiPlus, FiStar, FiLogOut } from 'react-icons/fi'
-import { useHistory, Link } from 'react-router-dom';
+import { FiUsers, FiPlus, FiStar, FiLogOut } from 'react-icons/fi'
+import { Link } from 'react-router-dom';
 
 import '../styles/components/sidebar.css'
 
 export default function Sidebar() {
-    // const { goBack } = useHistory();
 
     return (
         <aside className="app-sidebar">
@@ -27,11 +26,6 @@ export default function Sidebar() {
                         <FiLogOut size={24} color="#FFF" />
                     </Link>
                 </div>
-                {/* <div className="voltar">
-                    <button type="button" className="logout" onClick={goBack}>
-                        <FiArrowLeft size={24} color="#FFF" />
-                    </button>
-                </div> */}
             </footer>
         </aside>
     )
