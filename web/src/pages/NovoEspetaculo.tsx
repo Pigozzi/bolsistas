@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiCheck } from 'react-icons/fi';
 import Sidebar from '../components/Sidebar';
 
 function Espetaculo() {
@@ -31,8 +32,9 @@ function Espetaculo() {
                                         </button>
                                     </div>
                                     <div className="col-6 text-right">
-                                        <button className="btn btn-primary input-block">
-                                            Cadastrar
+                                        <button className="btn btn-success input-block">
+                                            <FiCheck className="mr-2" />
+                                                Cadastrar
                                         </button>
                                     </div>
                                 </div>

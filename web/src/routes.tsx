@@ -6,6 +6,7 @@ import Bolsistas from './pages/Bolsistas';
 import Espetaculos from './pages/Espetaculos';
 import NovoBolsista from './pages/NovoBolsista';
 import NovoEspetaculo from './pages/NovoEspetaculo';
+import BolsistaEspetaculo from './pages/BolsistaEspetaculo';
 
 function Routes() {
     return (
@@ -16,6 +17,7 @@ function Routes() {
                 <Route path="/espetaculos" component={Espetaculos} />
                 <Route path="/cadastrar/bolsista" component={NovoBolsista} />
                 <Route path="/cadastrar/espetaculo" component={NovoEspetaculo} />
+                <Route path="/cadastro" component={BolsistaEspetaculo} />
             </Switch>
         </BrowserRouter>
     );

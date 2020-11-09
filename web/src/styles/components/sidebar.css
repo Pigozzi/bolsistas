@@ -50,6 +50,15 @@ aside.app-sidebar footer .logout:hover {
   background: #d85d5d;
 }
 
+aside.app-sidebar footer .success {
+  background: #28a745;
+}
+
+aside.app-sidebar footer .success:hover {
+  background: #59b96f;
+}
+
+
 aside.app-sidebar footer div.voltar {
   position: absolute;
   bottom: 40px;

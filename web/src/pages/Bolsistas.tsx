@@ -2,10 +2,46 @@ import React from 'react';
 
 import Sidebar from '../components/Sidebar';
 import MUIDataTable from 'mui-datatables';
+import { FiDelete, FiEdit2, FiSearch } from 'react-icons/fi';
 
 function Bolsistas() {
 
-    const columns = ['Nome Completo', 'Total de horas', 'Opções'];
+    const columns = [
+        { name: 'name', label: 'Nome Completo' },
+        { name: 'total_hours', label: 'Total de horas' },
+        {
+            name: 'options',
+            label: 'Opções',
+            options: {
+                filter: false,
+                sort: false,
+                customBodyRenderLite: () => {
+                    return (
+                        <div>
+                            <button
+                                className="btn btn-success mr-2"
+                                onClick={() => window.alert('Consultar')}
+                            >
+                                <FiSearch />
+                            </button>
+                            <button
+                                className="btn btn-primary mr-2"
+                                onClick={() => window.alert('Editar')}
+                            >
+                                <FiEdit2 />
+                            </button>
+                            <button
+                                className="btn btn-danger mr-2"
+                                onClick={() => window.alert('Deletar')}
+                            >
+                                <FiDelete />
+                            </button>
+                        </div>
+                    )
+                }
+            }
+        }
+    ];
 
     const data = [
         ['Rafael Pigozzi', '12:00:00', 'Consultar',],
@@ -27,7 +63,6 @@ function Bolsistas() {
                                 search: true,
                                 filter: false,
                                 viewColumns: false,
-                                // selectableRows: "none",
                             }}
                         />
                     </div>

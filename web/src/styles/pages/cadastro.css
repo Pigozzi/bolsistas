@@ -9,7 +9,3 @@
 form div fieldset legend {
     color: black;
 }
-
-input[type=time]::-webkit-datetime-edit-ampm-field {
-    display: none;
-}

@@ -1,10 +1,8 @@
 import React from 'react';
+import { FiCheck } from 'react-icons/fi';
 import Sidebar from '../components/Sidebar';
 
-import '../styles/pages/cadastro.css';
-
-function Bolsista() {
-
+function NovoBolsista() {
     return (
         <div>
             <Sidebar />
@@ -15,38 +13,16 @@ function Bolsista() {
                             <div className="row fundo">
                                 <div className="col-12">
                                     <fieldset>
-                                        <legend>Cadastro de Bolsistas</legend>
+                                        <legend>Novo Bolsista</legend>
                                     </fieldset>
                                 </div>
-                                <div className="col-12 input-block">
-                                    <label htmlFor="name">Nome completo</label>
+                                <div className="col-8 input-block">
+                                    <label htmlFor="name">Nome do Bolsista</label>
                                     <input type="text" />
                                 </div>
-                                <div className="col-8 input-block">
-                                    <label htmlFor="">Nome do Espetáculo</label>
-                                    <select name="espetaculo" id="espetaculo">
-                                        <option selected disabled>Selecione um espetáculo</option>
-                                        <option value="VNJ">Violetas na janela</option>
-                                    </select>
-                                </div>
                                 <div className="col-4 input-block">
-                                    <label htmlFor="">Data do Espetáculo</label>
-                                    <select name="espetaculo" id="espetaculo">
-                                        <option selected disabled>Selecione a data do espetáculo</option>
-                                        <option value="date">16/03/2021</option>
-                                    </select>
-                                </div>
-                                <div className="col-6 input-block">
-                                    <label htmlFor="name">Entrada</label>
-                                    <input type="time" min="00:00" max="24:00" />
-                                </div>
-                                <div className="col-6 input-block">
-                                    <label htmlFor="name">Saída</label>
-                                    <input type="time" />
-                                </div>
-                                <div className="col-12 input-block">
-                                    <label htmlFor="description">Descrição</label>
-                                    <textarea name="description" id="description" className="col-12" rows={4}></textarea>
+                                    <label htmlFor="rg">RG</label>
+                                    <input type="text" />
                                 </div>
                                 <div className="row col-12">
                                     <div className="col-6">
@@ -55,8 +31,9 @@ function Bolsista() {
                                         </button>
                                     </div>
                                     <div className="col-6 text-right">
-                                        <button className="btn btn-primary input-block">
-                                            Cadastrar
+                                        <button className="btn btn-success input-block">
+                                            <FiCheck className="mr-2" />
+                                                Cadastrar
                                         </button>
                                     </div>
                                 </div>
@@ -69,4 +46,4 @@ function Bolsista() {
     )
 }
 
-export default Bolsista;
+export default NovoBolsista;
