@@ -2,7 +2,7 @@ import React from 'react';
 
 import Sidebar from '../components/Sidebar';
 import MUIDataTable from 'mui-datatables';
-import { FiDelete, FiEdit2, FiSearch } from 'react-icons/fi';
+import { FiDelete, FiEdit2 } from 'react-icons/fi';
 
 function Espetaculos() {
 
@@ -20,12 +20,6 @@ function Espetaculos() {
                 customBodyRenderLite: () => {
                     return (
                         <div>
-                            <button
-                                className="btn btn-success mr-2"
-                                onClick={() => window.alert('Consultar')}
-                            >
-                                <FiSearch />
-                            </button>
                             <button
                                 className="btn btn-primary mr-2"
                                 onClick={() => window.alert('Editar')}

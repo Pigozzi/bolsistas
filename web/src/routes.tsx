@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Login from './pages/Login';
 import Bolsistas from './pages/Bolsistas';
+import Cadastrar from './pages/Cadastrar';
 import Espetaculos from './pages/Espetaculos';
 import NovoBolsista from './pages/NovoBolsista';
 import NovoEspetaculo from './pages/NovoEspetaculo';
@@ -13,11 +14,12 @@ function Routes() {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={Login} />
+                <Route path="/cadastro" component={Cadastrar} />
                 <Route path="/bolsistas" component={Bolsistas} />
                 <Route path="/espetaculos" component={Espetaculos} />
                 <Route path="/cadastrar/bolsista" component={NovoBolsista} />
                 <Route path="/cadastrar/espetaculo" component={NovoEspetaculo} />
-                <Route path="/cadastro" component={BolsistaEspetaculo} />
+                <Route path="/bolsista/espetaculo" component={BolsistaEspetaculo} />
             </Switch>
         </BrowserRouter>
     );

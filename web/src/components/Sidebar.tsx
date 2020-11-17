@@ -6,6 +6,8 @@ import '../styles/components/sidebar.css'
 
 export default function Sidebar() {
 
+    // const { goBack } = useHistory();
+
     return (
         <aside className="app-sidebar">
             <footer>
@@ -24,7 +26,12 @@ export default function Sidebar() {
                 <Link to="/espetaculos" type="button">
                     <FiFilm size={24} color="#FFF" />
                 </Link>
-                <div className="voltar">
+                {/* <div className="voltar">
+                    <button type="button" className="goBack" onClick={goBack}>
+                        <FiArrowLeft size={24} color="#FFF" />
+                    </button>
+                </div> */}
+                <div className="sair">
                     <Link to="/" type="button" className="logout">
                         <FiLogOut size={24} color="#FFF" />
                     </Link>

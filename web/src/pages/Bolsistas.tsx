@@ -3,6 +3,7 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 import MUIDataTable from 'mui-datatables';
 import { FiDelete, FiEdit2, FiSearch } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 function Bolsistas() {
 
@@ -18,12 +19,9 @@ function Bolsistas() {
                 customBodyRenderLite: () => {
                     return (
                         <div>
-                            <button
-                                className="btn btn-success mr-2"
-                                onClick={() => window.alert('Consultar')}
-                            >
+                            <Link to="/bolsista/espetaculo" className="btn btn-success mr-2">
                                 <FiSearch />
-                            </button>
+                            </Link>
                             <button
                                 className="btn btn-primary mr-2"
                                 onClick={() => window.alert('Editar')}
@@ -44,7 +42,7 @@ function Bolsistas() {
     ];
 
     const data = [
-        ['Rafael Pigozzi', '12:00:00', 'Consultar',],
+        ['JOÃO DAS DORES', '12:00:00', 'Consultar',],
         ['Rafael Pigozzi', '12:00:00', 'Editar'],
         ['Rafael Pigozzi', '12:00:00', 'Deletar'],
     ];

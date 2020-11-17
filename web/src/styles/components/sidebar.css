@@ -42,6 +42,14 @@ aside.app-sidebar footer button:hover {
   background: #17D6EB;
 }
 
+aside.app-sidebar footer .goBack {
+  background: #e7bb42;
+}
+
+aside.app-sidebar footer .goBack:hover {
+  background: #d7e742;
+}
+
 aside.app-sidebar footer .logout {
   background: #e74242;
 }
@@ -58,8 +66,12 @@ aside.app-sidebar footer .success:hover {
   background: #59b96f;
 }
 
-
 aside.app-sidebar footer div.voltar {
+  position: absolute;
+  bottom: 100px;
+}
+
+aside.app-sidebar footer div.sair {
   position: absolute;
   bottom: 40px;
 }
