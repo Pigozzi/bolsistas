@@ -5,7 +5,10 @@ import EspetaculoController from './controllers/EspetaculoController';
 
 const routes = Router();
 
-routes.get('/', BolsistaController.index);
-routes.get('/espetaculos', EspetaculoController.index);
+const bolsistaController = new BolsistaController();
+const espetaculoController = new EspetaculoController();
 
-export default routes;
+routes.get('/', bolsistaController.index);
+routes.get('/espetaculos', espetaculoController.index);
+
+export default routes; 

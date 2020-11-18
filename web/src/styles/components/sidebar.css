@@ -2,7 +2,6 @@ aside.app-sidebar {
   position: fixed;
   height: 100%;
   padding: 32px 24px;
-  /* background: linear-gradient(329.54deg, #3c896d 0%, #15D6D6 100%); */
   background: linear-gradient(329.54deg, #2c2a2a 0%, #2c2a2a 100%);
   border-right: 2px solid #FFF;
 
