@@ -17,8 +17,8 @@ function Routes() {
                 <Route path="/cadastro" component={Cadastrar} />
                 <Route path="/bolsistas" component={Bolsistas} />
                 <Route path="/espetaculos" component={Espetaculos} />
-                <Route path="/cadastrar/bolsista" component={NovoBolsista} />
-                <Route path="/cadastrar/espetaculo" component={NovoEspetaculo} />
+                <Route path="/cadastrar/bolsistas" component={NovoBolsista} />
+                <Route path="/cadastrar/espetaculos" component={NovoEspetaculo} />
                 <Route path="/bolsista/espetaculo" component={BolsistaEspetaculo} />
             </Switch>
         </BrowserRouter>

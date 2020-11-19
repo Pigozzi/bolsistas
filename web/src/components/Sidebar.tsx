@@ -5,32 +5,24 @@ import { Link } from 'react-router-dom';
 import '../styles/components/sidebar.css'
 
 export default function Sidebar() {
-
-    // const { goBack } = useHistory();
-
     return (
         <aside className="app-sidebar">
             <footer>
                 <Link to="/cadastro" type="button" className="success">
                     <FiPlus size={24} color="#FFF" />
                 </Link>
-                <Link to="/cadastrar/bolsista" type="button">
+                <Link to="/cadastrar/bolsistas" type="button">
                     <FiUserPlus size={24} color="#FFF" />
                 </Link>
                 <Link to="/bolsistas" type="button">
                     <FiUsers size={24} color="#FFF" />
                 </Link>
-                <Link to="/cadastrar/espetaculo" type="button">
+                <Link to="/cadastrar/espetaculos" type="button">
                     <FiStar size={24} color="#FFF" />
                 </Link>
                 <Link to="/espetaculos" type="button">
                     <FiFilm size={24} color="#FFF" />
                 </Link>
-                {/* <div className="voltar">
-                    <button type="button" className="goBack" onClick={goBack}>
-                        <FiArrowLeft size={24} color="#FFF" />
-                    </button>
-                </div> */}
                 <div className="sair">
                     <Link to="/" type="button" className="logout">
                         <FiLogOut size={24} color="#FFF" />
