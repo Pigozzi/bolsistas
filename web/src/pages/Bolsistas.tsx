@@ -43,10 +43,10 @@ function Bolsistas() {
                                     bolsista.rg,
                                     '12:00:00',
                                     [
-                                        <Link to={`/bolsista/espetaculo/${bolsista.id}`} className="btn btn-success mr-2">
+                                        <Link to={`/consultar/bolsista/espetaculo/${bolsista.id}`} className="btn btn-success mr-2">
                                             <FiSearch />
                                         </Link>,
-                                        <Link to={`/bolsista/espetaculo/${bolsista.id}`} className="btn btn-primary mr-2">
+                                        <Link to={`/editar/bolsista/${bolsista.id}`} className="btn btn-primary mr-2">
                                             <FiEdit2 />
                                         </Link>
                                     ]

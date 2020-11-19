@@ -40,14 +40,9 @@ function Espetaculos() {
                                 return [
                                     espetaculo.nome,
                                     espetaculo.data,
-                                    [
-                                        <Link to={`/bolsista/espetaculo/${espetaculo.id}`} className="btn btn-success mr-2">
-                                            <FiSearch />
-                                        </Link>,
-                                        <Link to={`/bolsista/espetaculo/${espetaculo.id}`} className="btn btn-primary mr-2">
-                                            <FiEdit2 />
-                                        </Link>
-                                    ]
+                                    <Link to={`/editar/espetaculo/${espetaculo.id}`} className="btn btn-primary mr-2">
+                                        <FiEdit2 />
+                                    </Link>
                                 ]
                             })}
                             columns={columns}
