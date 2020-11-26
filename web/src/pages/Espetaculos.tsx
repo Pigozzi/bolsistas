@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import Sidebar from '../components/Sidebar';
 import MUIDataTable from 'mui-datatables';
-import { FiEdit2, FiSearch } from 'react-icons/fi';
+import { FiEdit2 } from 'react-icons/fi';
 import api from '../services/api';
 import { Link } from 'react-router-dom';
 
@@ -61,5 +61,3 @@ function Espetaculos() {
 }
 
 export default Espetaculos;
-
-// https://github.com/gregnb/mui-datatables/blob/master/examples/custom-action-columns/index.js - Custom columns
